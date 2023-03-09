@@ -1,28 +1,74 @@
 .infoBar {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
-  background: #2979ff;
-  border-radius: 4px 4px 0 0;
-  height: 60px;
+  background: #3a31dc;
+  border-radius: 20px 20px 0 0;
   width: 100%;
+  padding: 16px;
 }
 
-.leftInnerContainer {
+.leftInnerContainerWrap {
   flex: 0.5;
   display: flex;
-  align-items: center;
-  margin-left: 5%;
+  align-items: flex-end;
   color: white;
 }
 
-.rightInnerContainer {
-  display: flex;
-  flex: 0.5;
-  justify-content: flex-end;
-  margin-right: 5%;
+.leftInnerContainerWrap h3{
+  margin: 0 20px 0 0;
 }
 
-.onlineIcon {
-  margin-right: 5%;
+.leftInnerContainer {
+  display: flex;
+  align-items: center;
+}
+
+.leftInnerContainer .online{
+  background-color: #26d000;
+  border-radius: 10px;
+  width: 10px;
+  height: 10px;
+  margin-right: 8px;
+}
+
+.leftInnerContainer .activeItem + .activeItem{
+  padding-left: 10px;
+  position: relative;
+}
+.leftInnerContainer .activeItem + .activeItem::before{
+  content: ',';
+  position: relative;
+  left: -9px;
+}
+
+.leftInnerContainer .activeContainer {
+  display: flex;
+}
+
+.rightInnerContainer .close {
+  height: 16px;
+  width: 16px;
+  display: block;
+  position: relative;
+}
+
+.rightInnerContainer .close::before {
+  content: "";
+  position: absolute;
+  height: 15px;
+  width: 2px;
+  background-color: white;
+  transform: rotate(45deg);
+  left:7px;
+}
+.rightInnerContainer .close::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 15px;
+  background-color: white;
+  transform: rotate(45deg);
+  top: 6px;
+  left: 1px;
 }

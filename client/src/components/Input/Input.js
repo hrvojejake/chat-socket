@@ -7,12 +7,12 @@ const Input = ({ setMessage, sendMessage, message }) => (
     <input
       className="input"
       type="text"
-      placeholder="Type a message..."
+      placeholder="Unesi poruku..."
       value={message}
       onChange={({ target: { value } }) => setMessage(value)}
       onKeyDown={event => event.key === 'Enter' ? sendMessage(event) : null}
     />
-    <button className="sendButton" onClick={e => sendMessage(e)}>Send</button>
+    <button className="sendButton" onClick={e => sendMessage(e)}>Pošalji</button>
   </form>
 )
 

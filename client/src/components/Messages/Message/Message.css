@@ -3,8 +3,11 @@
   border-radius: 20px;
   padding: 5px 20px;
   color: white;
-  display: inline-block;
+  display: flex;
+  align-items: center;
   max-width: 80%;
+  padding: 16px;
+  margin-bottom: 16px;
 }
 
 .messageText {
@@ -13,6 +16,7 @@
   float: left;
   font-size: 1.1em;
   word-wrap: break-word;
+  margin: 0;
 }
 
 .messageText img {
@@ -22,7 +26,7 @@
 .messageContainer {
   display: flex;
   justify-content: flex-end;
-  padding: 0 5%;
+  padding: 0 16px;
   margin-top: 3px;
 }
 
@@ -32,50 +36,7 @@
   font-family: Helvetica;
   color: #828282;
   letter-spacing: 0.3px;
-}
-
-.pl-10 {
-  padding-left: 10px;
-}
-
-.pr-10 {
-  padding-right: 10px;
-}
-
-.messageBox {
-  background: #f3f3f3;
-  border-radius: 20px;
-  padding: 5px 20px;
-  color: white;
-  display: inline-block;
-  max-width: 80%;
-}
-
-.messageText {
-  width: 100%;
-  letter-spacing: 0;
-  float: left;
-  font-size: 1.1em;
-  word-wrap: break-word;
-}
-
-.messageText img {
-  vertical-align: middle;
-}
-
-.messageContainer {
-  display: flex;
-  justify-content: flex-end;
-  padding: 0 5%;
-  margin-top: 3px;
-}
-
-.sentText {
-  display: flex;
-  align-items: center;
-  font-family: Helvetica;
-  color: #828282;
-  letter-spacing: 0.3px;
+  margin: 0 0 16px 0;
 }
 
 .pl-10 {
@@ -102,8 +63,8 @@
   color: #353535;
 }
 
-.backgroundBlue {
-  background: #2979ff;
+.backgroundBlue{
+  background: #3a31dc;
 }
 
 .backgroundLight {
